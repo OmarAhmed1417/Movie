@@ -17,7 +17,7 @@ export default function Nav() {
     let [apper ,setapper ]=useState<boolean>(true);
     async function search(value: string) {
         try {
-            const response = await axios.get(`${Base_url}/search/movie?api_key=6f90a5f0dc0168ebbbc0a517b3611f90&query=${encodeURIComponent(value)}`);
+            const response = await axios.get(`${Base_url}/search/movie?api_key=${process.env.NEXT_PUBLIC_API_KEY}&query=${encodeURIComponent(value)}`);
             return response.data; 
         } catch (error) {
             console.error('Error message:', error);
