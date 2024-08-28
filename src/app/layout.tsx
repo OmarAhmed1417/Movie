@@ -4,7 +4,7 @@ import '../../styles/globals.css'
 
 export const metadata = {
   title: 'Movie Website',
-  description: 'Enjoy a wonderful experience with OHM Movies',
+  description: 'Enjoy a wonderful experience with OHM Movies .com',
 }
 
 export default function RootLayout({
