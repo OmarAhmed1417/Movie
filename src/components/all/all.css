@@ -1,0 +1,17 @@
+.text-4xl{
+    position: relative;
+}
+.text-4xl::after{
+    content: "";
+    position: absolute;
+    left: 1.5%;
+    bottom: 0;
+    width: 310px;
+    height: 2px;
+    background-color:#D9D9D9;
+}
+a:hover{
+    transform: translateY(-10px); /* Slightly lift the card */
+    cursor: pointer;
+    transition: 1s;
+}

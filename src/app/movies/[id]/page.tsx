@@ -60,13 +60,13 @@ export default function MoviePage() {
 
   return (
     <>
-      <title>{movie.title}</title>
       {/* Apply the pirataOne className to use the font */}
-      <h1 className={`text-3xl mt-8 text-maincolor-text font-bold text-center `}>
+      <h1 className={`lg:text-3xl mt-8 text-maincolor-text font-bold text-center md:text-2xl ${pirataOne.className}`}>
+      <title>{movie.title}</title>
         {movie.title}
       </h1>
       <div className="min-h-screen flex flex-col justify-center items-center text-maincolor-text font-bold p-4">
-        <div className="flex flex-col md:flex-row justify-center items-center gap-10 text-center">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-40 text-center">
           <div>
             <Image
               src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
@@ -80,8 +80,8 @@ export default function MoviePage() {
 
           <div className="description w-full md:w-2/5 text-center">
             <h2 className={`text-3xl mb-4 ${pirataOne.className}`}>{movie.title}</h2>
-            <p className="mb-2">{movie.overview}</p>
-            <hr className="pt-6 mt-6" />
+            <p className="mb-2 text-justify">description :    {movie.overview}</p>
+            <hr className="pt-4 mt-4" />
             <p className="p-2">Release Date: {movie.release_date}</p>
             <p>
               Rating: {movie.vote_average}  

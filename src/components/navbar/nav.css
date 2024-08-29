@@ -4,5 +4,15 @@ button{
    border-radius: 5px;
 }
 input{
+    border: 1px solid #ffffff;
     border-radius: 5px ;
+}
+
+.bg-transparent{
+    border: 1px solid gray;
+}
+
+nav{
+    position: static;
+    top: 10px;
 }

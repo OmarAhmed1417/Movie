@@ -1,13 +1,8 @@
-.movie-item{
-    border: none;
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); /* Larger shadow */
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
-    border-radius: 10px;
-}
+
 .movie-item:hover{
     transform: translateY(-10px); /* Slightly lift the card */
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); /* Larger shadow */
     cursor: pointer;
+    transition: 1s;
 }
 input{
     border: none;
