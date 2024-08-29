@@ -24,7 +24,7 @@ const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w500"; // Base URL for the im
 const Review: React.FC<ReviewProps> = ({ movie }) => {
   return (
     <>
-      <h1 className="text-4xl   font-bold text-left mt-5 mb-5 p-4 pl-8 text-maincolor-text lol">
+      <h1 className="text-4xl  font-bold text-left p-4 pl-8 text-maincolor-text lol mt-32">
         Your Movies:
       </h1>
       <div className="text-maincolor-text font-serif min-h-screen flex flex-col p-5">
