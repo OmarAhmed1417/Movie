@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { Pirata_One } from 'next/font/google';
 import {Italiana, Medula_One, Roboto} from "@next/font/google";
-
+import logo from '../../../image/logo-color.png'
 const pirataOne = Pirata_One({
   weight: '400',
   subsets: ['latin'],
@@ -61,22 +61,33 @@ export default function MoviePage() {
   return (
     <>
       {/* Apply the pirataOne className to use the font */}
-      <h1 className={`lg:text-3xl mt-8 text-maincolor-text font-bold text-center md:text-3xl ${pirataOne.className}`}>
+      <h1 className={`lg:text-4xl mt-8 text-maincolor-text font-bold text-center md:text-4xl ${pirataOne.className}`}>
       <title>{movie.title}</title>
         {movie.title}
       </h1>
       <div className="min-h-screen flex flex-col justify-center items-center text-maincolor-text font-bold p-4">
         <div className="flex flex-col md:flex-row justify-center items-center gap-40 text-center">
           <div>
+          {movie.poster_path ? (
+
             <Image
-              src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-              alt={`${movie.title} Poster`}
-              className="rounded-md"
-              width={350}
-              height={470}
-              style={{ objectFit: "cover" }}
+            src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+            alt={`${movie.title} Poster`}
+            className="rounded-md"
+            width={350}
+            height={470}
+            style={{ objectFit: "cover" }}
             />
-          </div>
+          ):(
+            <Image
+            src={logo}
+            alt={'movie'}
+            width={300}
+            height={450}
+            className="rounded"
+          />
+          )}
+            </div>
 
           <div className="description w-full md:w-2/5 text-center">
             <h2 className={`text-3xl mb-4 ${pirataOne.className}`}>{movie.title}</h2>
