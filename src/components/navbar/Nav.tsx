@@ -4,6 +4,7 @@ import { Base_url } from '@/app/baseurl/Base';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import './nav.css';
+
 import Review from '../review_movie/Review';
 
 export default function Nav() {

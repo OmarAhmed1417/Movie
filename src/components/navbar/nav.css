@@ -1,7 +1,8 @@
 button{
-    border: none;
     width: 120px;
    border-radius: 5px;
+  border: none;
+
 }
 input{
     border: 1px solid #ffffff;
@@ -13,6 +14,9 @@ input{
 }
 
 nav{
-    position: static;
-    top: 10px;
+    position: fixed;
+    width: 100vw;
+    background-color:#111;
+    top: 0;
+    z-index: 100000;
 }
