@@ -61,7 +61,7 @@ export default function MoviePage() {
   return (
     <>
       {/* Apply the pirataOne className to use the font */}
-      <h1 className={`lg:text-3xl mt-8 text-maincolor-text font-bold text-center md:text-2xl ${pirataOne.className}`}>
+      <h1 className={`lg:text-3xl mt-8 text-maincolor-text font-bold text-center md:text-3xl ${pirataOne.className}`}>
       <title>{movie.title}</title>
         {movie.title}
       </h1>
